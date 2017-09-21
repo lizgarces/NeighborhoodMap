@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Round Rock Neighborhood Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class = "topcontainer">
+      <h1>My Neighborhood, Round Rock TX </h1>
+    </div>
+    <div class="container">
+      <div class="options-box, aside">
+        <div>
+          <input type="search" class="filter-text" data-bind="textInput: inputInfo" placeholder="Enter your favorite location">
+        </div>
+        <ul class="listStyle" data-bind="foreach: inputPlaceList">
+          <li data-bind="text: name, click: $parent.clickOnMarker" href="#">
+          </li>
+        </ul>
+      </div>
+
+      <div id="map" class="map-canvas, main"></div>
+    </div>
+    <!--Calling all the files and libraries involved in the project  -->
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!--Calling the google maps  -->
+    <!-- I added the onerror required -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7SZk61zeRXnshllQRFaPP92lvYBUeiDc&libraries=geometry&v=3&callback=initMap" onerror="myErrorHandling()">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ece1d4;
+}
+
+.topcontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+input {
+  font-size: 12px;
+}
+
+h1 {
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+hr {
+  background: #D0D7D9;
+  height: 1px;
+  margin: 20px 0 20px 0;
+  border: none;
+}
+
+.map-canvas {
+  bottom: 0px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+.options-box {
+  height: 100%;
+  line-height: 35px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.listStyle {
+  text-indent: -38px;
+  list-style: none;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.filter-text {
+  width: 90%;
+}
+
+.aside {
+  width: 25%;
+}
+
+.main {
+  width: 75%;
+}
+/* Smartphones (portrait) */
+@media only screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+}
