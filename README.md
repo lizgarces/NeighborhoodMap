@@ -2,9 +2,11 @@
 This is project for the course frontend Nanodegree program.
 
 ## To execute this:
-You can execute the project from your browser. Just copy the files in your computer, then open the file index.html.
+-clone the files from this repository.
 
-You will be able to see the project of the nanodegree.
+ Then using Chrome, open index.html.
+
+Or copy this link to your browser: https://lizgarces.github.io/NeighborhoodMap/
 
 ## Project
 I created a map to display the beautiful places that you can find in Round Rock TX.
